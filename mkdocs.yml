@@ -1,0 +1,23 @@
+site_name: Codesys Docs
+site_description: Official documentation for CODESYS on ARMxy industrial edge gateways
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: zh
+  logo: assets/图片材料/钡铼技术英文logo.png
+  favicon: assets/图片材料/钡铼技术英文logo.png
+  palette:
+    - scheme: default
+      primary: light-blue
+      accent: blue
+
+nav:
+  - Home: index.md
+
+extra_css:
+  - assets/custom.css
+
+extra_javascript:
+  - assets/translate.js
+  - https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit

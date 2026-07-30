@@ -1,0 +1,133 @@
+/* ==========================
+   标题、正文字号（公文字号标准）
+   ========================== */
+/* 一级标题 # 章节大标题 —— 小二 */
+.md-typeset h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1em 0 0.6em;
+}
+
+/* 二级标题 ## 小节标题 —— 小三 */
+.md-typeset h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 1em 0 0.5em;
+}
+
+/* 三级标题 ### 子小节 —— 四号 */
+.md-typeset h3 {
+    font-size: 1.167rem;
+    font-weight: 600;
+}
+
+/* 四级标题 #### —— 小四 */
+.md-typeset h4 {
+    font-size: 1rem;
+}
+
+/* 正文段落文字 —— 五号 */
+.md-typeset p {
+    font-size: 0.875rem;
+    line-height: 1.7;
+}
+
+/* 列表同步五号正文尺寸 */
+.md-typeset li {
+    font-size: 0.875rem;
+    line-height: 1.7;
+}
+
+/* 代码块略小于正文 */
+.md-typeset code {
+    font-size: 0.82rem;
+}
+
+/* ==========================
+   Logo大小优化
+   ========================== */
+
+.md-header__inner {
+    max-width: 100% !important;
+    padding: 0 2rem !important;
+    height: 96px !important;
+}
+
+
+.md-header__button.md-logo {
+    height: 100%;
+    padding: 3px 0;
+    margin-left: 6rem !important;
+}
+
+
+.md-header__button.md-logo img {
+    height: 88px !important;
+    width: 88px !important;
+    object-fit: contain;
+}
+
+/* 标题垂直对齐 Logo */
+.md-header__title {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-top: 23px;
+    box-sizing: border-box;
+}
+
+/* 翻译、搜索按钮垂直居中对齐 */
+.md-header__source {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* 移动端适配，避免导航过高 */
+@media screen and (max-width:768px) {
+    .md-header__inner {
+        height: 64px !important;
+    }
+    .md-header__button.md-logo img {
+        height: 44px !important;
+    }
+    /* 手机端减少左边距，不挤内容 */
+    .md-header__button.md-logo {
+        margin-left: 1rem !important;
+    }
+}
+
+/* 完全隐藏底部版权栏 */
+.md-footer-meta {
+    display: none !important;
+}
+/* 缩小底部空白区域（可选，优化页面留白） */
+.md-footer {
+    padding: 0;
+}
+/* 防止翻译后页面整体下移 */
+body {
+    top: 0 !important;
+}
+
+/* ==========================
+   顶部导航栏渐变
+   ========================== */
+
+.md-header {
+    background: linear-gradient(
+        90deg,
+        #E8F3FF 0%,
+        #E8FAEE 100%
+    ) !important;
+}
+
+/* 网站标题 */
+.md-header__title {
+    color: #333333 !important;
+}
+
+/* 左侧菜单按钮 */
+.md-header__button {
+    color: #333333 !important;
+}
