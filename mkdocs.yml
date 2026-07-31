@@ -14,6 +14,8 @@ theme:
 
 nav:
   - Home: index.md
+  - Codesys:
+      - 说明书: codesys/Codesys说明书.md
 
 extra_css:
   - assets/custom.css
