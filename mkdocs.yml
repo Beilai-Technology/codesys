@@ -13,7 +13,7 @@ theme:
       accent: blue
 
 nav:
-  - Home: index.md
+  - 首页: index.md
   - Codesys:
       - 说明书: codesys/Codesys说明书.md
 
