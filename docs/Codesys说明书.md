@@ -80,110 +80,85 @@ CODESYS是一款基于IEC61131-3国际标准的通用自动化工程软件平台
 
 ## 4.1.创建第一个工程
 
-1.新建项目：点击File> New Project,选择目标设备模板(如standard project),放置在合适的路径下。  
+1.新建项目：点击File> New Project,选择目标设备模板(如standard project),放置在合适的路径下。 
+
+![](https://cdn.jsdelivr.net/gh/Beilai-Technology/img-bed/assets/p007_01_IM148.jpg)
+
 2.配置任务：在标准工程下，确认设备和开发语言。
+
+![](https://cdn.jsdelivr.net/gh/Beilai-Technology/img-bed/assets/p007_02_IM149.jpg)
 
 3.添加描述文件：首次使用需要安装钡铼提供的 XML 描述文件，在菜单栏选择工具-设备存储库。在弹出的设备存储库窗口中，点击 安装(I)···按钮。
 
-```
-Untitled3. project"-CODESYS
-文件 编辑 视图 工程 编译 在线 清试 窗口 帮助
-CODESYS 安装程序… Application [Device: PLC逻辑] ……………… 。
-库存储…
-20 设备存储库…
-hotel? 授权存储库...
-Device(CODESYS Control Wn V3 x64) 授权管理器…
-PLC逻辑 自定义… Application
-库管理器 选项…
-PLC PRG (PRG) 导入与导出选项…
-任务配置 导出安装配置…
-MainTask(IEC-Tasks) Edge Gateway
-PLC PRG Automation Server
-设备 程序组织单元
-最后一次编译： 。 预算详 工程用户：(没有用户)
-```
+![](https://cdn.jsdelivr.net/gh/Beilai-Technology/img-bed/assets/p008_01_IM154.jpg)
 
 4.安装：浏览并选择钡铼提供的设备描述文件，确认安装，此时在设备存储库中即可看到钡铼的设备型号(例如: Shenzhen Belai ARM 64 Pro) 。
 
-```
-Untitled3. project"-CODESYS
-文件 视图 FC 网络 在线 调试 工具 窗口 帮助
-Application [Device: PLC逻辑]
-设备存储库
-Uneded3
-Device (CODESYS Control Win V3x| 位置(L) System Repostory 编辑位置(E) 
-PLC逻辑 安装设备描述
-Application
-库管理器 此电脑 ·新加卷(F:) >2025 9 ,EdgePLC >codesys 安装包和 xml文件 在 codesys安装包和 xml文…
-PLC PRG(PRG 新建文件夹 任务配置
-MainTask 此电脑 名称 修改日期 类型 大小
-PLCJ WPS云盘 Shenzhen Bellai ARM  64 Linux Pro.  de   2026/7/14 8:56 Microsoft Edge- 76 KB
-3D 对象 Microsoft Edge-- 77 KB
-视频 Microsoft Edge-- 77 KB
-图片
-文档
-下载
-音乐
-桌面
-本地磁盘(C：)
-本地画盘(D：)
-本地磁盘(E：)
-新加卷(F:)
-新加卷(G:)
-文件名(N): Shenzhen Beilai ARM 64 Linux Pro. devdesc. xml 设备描述(*. devdesc. xml)
-打开(O) 取消 设备 程序组织单元
-最后一次编译： M8操译 工程用户：(没有用户)
-```
+![](https://cdn.jsdelivr.net/gh/Beilai-Technology/img-bed/assets/p008_02_IM155.jpg)
+
+![](https://cdn.jsdelivr.net/gh/Beilai-Technology/img-bed/assets/p009_01_IM158.jpg)
 
 5.更新设备：在左侧设备树中，右键点击默认的PLC Device。选择对应的文件更新设备。
 
-```
-Untitled3. project-CODESYS
-视图 工程 4 在线 调试 帮助 文件 编辑
-Application [Device: PLC逻辑]
-设备存储库
-Lhotted3
-Device (CODESYS Control Win V3X 位置(L) ystem Reportury 编辑位置(E) 
-PLC逻辑
-Application
-库管理器 安装的设备描述(V)
-PLC PRG(PRG) 用于全文搜索的字符串 供应商 <全部供应商> 安装(1)…
-任务配置 卸载(U) ManTaok (IEC-Tad 名称 供应商
-PLC PRG CODESYS Control Win V3x64 CODESYS 导出(E).
-CODESYS Control Wn V3×64 CODESYS
-Shenzhen Bellai Technology Co.
-SoftMoson驱动器
-详细信息(D) 
-关闭
-设备 程序组织单元
-                                                                                           最后一次缓评：          预编译                 工程用户：(没有用户)               
-```
+![](https://cdn.jsdelivr.net/gh/Beilai-Technology/img-bed/assets/p009_02_IM159.jpg)
 
 ## 4.2.添加扩展模块
 
 1. 添加 N/X/Y 系列模块  
 右键点击已更新的钡铼 Device节点，和上述类似在菜单栏选择工具-设备存储库。在弹出的设备存储库窗口中，以N2162为例，安装对应的扩展模块 xml文件。
 
+![](https://cdn.jsdelivr.net/gh/Beilai-Technology/img-bed/assets/p010_01_IM163.jpg)
+
 2.更新设备  
 右键设备名添加扩展模块。根据实际硬件需求，选择并添加对应的扩展模块。
+
+![](https://cdn.jsdelivr.net/gh/Beilai-Technology/img-bed/assets/p010_02_IM164.jpg)
 
 ## 4.3.操作外部设备
 
 1.连接网关：点击设备-通信设置-扫描网络进行连接，显示设备信息即为连接成功。
 
+![](https://cdn.jsdelivr.net/gh/Beilai-Technology/img-bed/assets/p011_01_IM168.jpg)
+
+![](https://cdn.jsdelivr.net/gh/Beilai-Technology/img-bed/assets/p011_02_IM169.jpg)
+
 2.添加用户信息：初始设备需要添加用户信息，设置好账户密码，即可正常登录设备。
+
+![](https://cdn.jsdelivr.net/gh/Beilai-Technology/img-bed/assets/p012_01_IM172.jpg)
+
+![](https://cdn.jsdelivr.net/gh/Beilai-Technology/img-bed/assets/p012_02_IM173.jpg)
 
 3.下载：对应默认应用。
 
+![](https://cdn.jsdelivr.net/gh/Beilai-Technology/img-bed/assets/p013_01_IM176.jpg)
+
 4.调试指引：启动文件之前需修改更新变量为使能总线扫描，点击登录按钮配置参数，确认登录无误后，再点击启动即可对设备进行正常的读写操作与逻辑控制。
+
+![](https://cdn.jsdelivr.net/gh/Beilai-Technology/img-bed/assets/p013_02_IM177.jpg)
+
+![](https://cdn.jsdelivr.net/gh/Beilai-Technology/img-bed/assets/p014_01_IM180.jpg)
+
+5.I/O输出功能验证：测试的输出变量对应的“预备值”设定为TRUE，在顶部栏调试选项卡选择写入值下发到物理端口，对应I/O口闭合指示灯亮。
+
+![](https://cdn.jsdelivr.net/gh/Beilai-Technology/img-bed/assets/p014_02_IM181.jpg)
 
 ## 4.4.Modbus RTU Client配置
 
-1. 自定义XML文件参数配置  
+1.安装和添加
+
+按照上述模块方法添加了modbus拓展模块后如图模块即可正常使用。
+
+![](https://cdn.jsdelivr.net/gh/Beilai-Technology/img-bed/assets/p015_01_IM185.jpg)
+
+2. 自定义XML文件参数配置  
 由于Modbus模块涉及功能字、串口波特率、位宽等配置，不同模块间可能存在差异。用户可通过修改自定义XML文件来适配不同的IO板。  
 可修改的参数区域包括：-站地址(Station Address)：用于设置从站地址。-波特率设置(Bit rate setting)：配置串口通信速率。-校验位设置(Check bit setting)：配置奇偶校验。-数据位设置(Data bit setting)：配置数据位宽度。
 
-2. 支持的功能码与后续规划  
+![](https://cdn.jsdelivr.net/gh/Beilai-Technology/img-bed/assets/p015_02_IM186.jpg)
+
+![](https://cdn.jsdelivr.net/gh/Beilai-Technology/img-bed/assets/p016_01_IM189.jpg)
+
+4. 支持的功能码与后续规划  
 当前支持: Modbus RTU Client 支持 0x01,0x02,0x03,0x04 命令字。  
 后续规划:将完善其他命令字，并添加 Modbus RTU Server 和 Modbus TCP Client。  
 License 说明: CODESYS 已内置购买 Modbus TCP Server 和 EtherCAT 模块，如需解锁使用请购买相应的 License。
