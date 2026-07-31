@@ -15,7 +15,7 @@ theme:
 nav:
   - 首页: index.md
   - Codesys:
-      - 说明书: codesys/Codesys说明书.md
+      - 说明书: Codesys/Codesys说明书.md
 
 extra_css:
   - assets/custom.css
