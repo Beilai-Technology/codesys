@@ -1,5 +1,26 @@
 site_name: Codesys Docs
 site_description: Official documentation for CODESYS on ARMxy industrial edge gateways
+site_url: https://beilai-technology.github.io/codesys/
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: zh
+          default: true
+          name: 中文
+          build: true
+        - locale: en
+          name: English
+          build: true
+          nav_translations:
+            首页: Home
+            Codesys: Codesys
+            说明书: Manual
 
 theme:
   name: material
@@ -19,7 +40,3 @@ nav:
 
 extra_css:
   - assets/custom.css
-
-extra_javascript:
-  - assets/translate.js
-  - https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit
